@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW7" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KXu-9Y-vDc">
+                                <rect key="frame" x="16" y="28" width="343" height="68"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nG7-tf-L9l">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter latitude for p1" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NGA-DQ-pAt" customClass="GeoCalcTextField" customModule="HW7" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="167.5" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter longitude for p1" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ugk-i7-12T" customClass="GeoCalcTextField" customModule="HW7" customModuleProvider="target">
+                                                <rect key="frame" x="175.5" y="0.0" width="167.5" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="NGA-DQ-pAt" firstAttribute="width" secondItem="ugk-i7-12T" secondAttribute="width" id="6UE-2H-xrt"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VuU-dh-w3U">
+                                        <rect key="frame" x="0.0" y="38" width="343" height="30"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter latitude for p2" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="SFs-X9-tJs" customClass="GeoCalcTextField" customModule="HW7" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="167.5" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter longitude for p2" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="D6q-kG-YLw" customClass="GeoCalcTextField" customModule="HW7" customModuleProvider="target">
+                                                <rect key="frame" x="175.5" y="0.0" width="167.5" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="SFs-X9-tJs" firstAttribute="width" secondItem="D6q-kG-YLw" secondAttribute="width" id="C1T-Fh-X4h"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nG7-tf-L9l" firstAttribute="height" secondItem="VuU-dh-w3U" secondAttribute="height" id="Ftt-X5-Z2Y"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2G-JQ-JLF" customClass="GeoCalcButton" customModule="HW7" customModuleProvider="target">
+                                <rect key="frame" x="16" y="104" width="125" height="30"/>
+                                <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calcButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MJc-el-fWq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QW-re-b0l" customClass="GeoCalcButton" customModule="HW7" customModuleProvider="target">
+                                <rect key="frame" x="234" y="104" width="125" height="30"/>
+                                <state key="normal" title="Clear"/>
+                                <connections>
+                                    <action selector="clearButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hfu-Pa-PEV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDU-X1-5B3" customClass="GeoCalcLabel" customModule="HW7" customModuleProvider="target">
+                                <rect key="frame" x="16" y="142" width="72" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYe-Dh-gRf" customClass="GeoCalcLabel" customModule="HW7" customModuleProvider="target">
+                                <rect key="frame" x="96" y="142" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bearing:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exx-1a-KSs" customClass="GeoCalcLabel" customModule="HW7" customModuleProvider="target">
+                                <rect key="frame" x="16" y="170.5" width="63.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F8N-sN-wyh" customClass="GeoCalcButton" customModule="HW7" customModuleProvider="target">
+                                <rect key="frame" x="125" y="629" width="125" height="30"/>
+                                <state key="normal" title="Settings"/>
+                                <connections>
+                                    <segue destination="Gof-h4-xeg" kind="show" identifier="settingsSegue" id="krQ-pV-6Oz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxI-Cg-FSw" customClass="GeoCalcLabel" customModule="HW7" customModuleProvider="target">
+                                <rect key="frame" x="96" y="171" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KXu-9Y-vDc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8Zf-Bg-xoo"/>
+                            <constraint firstItem="pYe-Dh-gRf" firstAttribute="top" secondItem="5QW-re-b0l" secondAttribute="bottom" constant="8" id="CAk-Fo-SOb"/>
+                            <constraint firstItem="5QW-re-b0l" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="CfT-u6-Xue"/>
+                            <constraint firstItem="KXu-9Y-vDc" firstAttribute="centerX" secondItem="F8N-sN-wyh" secondAttribute="centerX" id="DWp-qF-44g"/>
+                            <constraint firstItem="5QW-re-b0l" firstAttribute="top" secondItem="KXu-9Y-vDc" secondAttribute="bottom" constant="8" symbolic="YES" id="DiQ-9D-wVU"/>
+                            <constraint firstItem="YxI-Cg-FSw" firstAttribute="leading" secondItem="exx-1a-KSs" secondAttribute="trailing" constant="16.5" id="EPY-Ne-wgX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="F8N-sN-wyh" secondAttribute="bottom" constant="8" symbolic="YES" id="Gxz-EZ-J7V"/>
+                            <constraint firstItem="KXu-9Y-vDc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JFi-BX-CPR"/>
+                            <constraint firstItem="KXu-9Y-vDc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="JM8-ab-dQx"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pYe-Dh-gRf" secondAttribute="trailing" constant="20" symbolic="YES" id="L2J-iO-9Mc"/>
+                            <constraint firstItem="5QW-re-b0l" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="NAS-mp-LOp"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="z2G-JQ-JLF" secondAttribute="trailingMargin" id="NGD-4P-3LQ"/>
+                            <constraint firstItem="exx-1a-KSs" firstAttribute="top" secondItem="wDU-X1-5B3" secondAttribute="bottom" constant="8" symbolic="YES" id="NUR-GQ-JYK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KXu-9Y-vDc" secondAttribute="trailing" id="Nv7-Q5-7nf"/>
+                            <constraint firstItem="KXu-9Y-vDc" firstAttribute="leading" secondItem="wDU-X1-5B3" secondAttribute="leading" id="XQX-on-mac"/>
+                            <constraint firstItem="wDU-X1-5B3" firstAttribute="top" secondItem="z2G-JQ-JLF" secondAttribute="bottom" constant="8" symbolic="YES" id="Y98-UL-GDu"/>
+                            <constraint firstItem="F8N-sN-wyh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="a3b-2g-sHx"/>
+                            <constraint firstItem="5QW-re-b0l" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aZB-Sx-xzq"/>
+                            <constraint firstItem="KXu-9Y-vDc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cxZ-ZZ-otC"/>
+                            <constraint firstItem="pYe-Dh-gRf" firstAttribute="leading" secondItem="wDU-X1-5B3" secondAttribute="trailing" constant="8" id="fIP-Le-Wzc"/>
+                            <constraint firstItem="z2G-JQ-JLF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fyU-Lm-aAK"/>
+                            <constraint firstItem="KXu-9Y-vDc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gqv-hv-6tj"/>
+                            <constraint firstItem="exx-1a-KSs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gv1-Rm-Ecu"/>
+                            <constraint firstItem="KXu-9Y-vDc" firstAttribute="trailing" secondItem="5QW-re-b0l" secondAttribute="trailing" id="j7d-BT-BQJ"/>
+                            <constraint firstItem="KXu-9Y-vDc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="klx-WH-af4"/>
+                            <constraint firstItem="wDU-X1-5B3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="n2d-OI-LXO"/>
+                            <constraint firstItem="KXu-9Y-vDc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oJ1-BR-elL"/>
+                            <constraint firstItem="z2G-JQ-JLF" firstAttribute="top" secondItem="KXu-9Y-vDc" secondAttribute="bottom" constant="8" symbolic="YES" id="pfr-Cw-ynD"/>
+                            <constraint firstItem="KXu-9Y-vDc" firstAttribute="leading" secondItem="exx-1a-KSs" secondAttribute="leading" id="rWP-n7-cbm"/>
+                            <constraint firstItem="z2G-JQ-JLF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:3" id="rkS-6z-AYH"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YxI-Cg-FSw" secondAttribute="trailing" constant="20" symbolic="YES" id="t1P-Qr-fUn"/>
+                            <constraint firstItem="YxI-Cg-FSw" firstAttribute="top" secondItem="wDU-X1-5B3" secondAttribute="bottom" constant="8.5" id="wa8-uC-2Jq"/>
+                            <constraint firstItem="KXu-9Y-vDc" firstAttribute="leading" secondItem="z2G-JQ-JLF" secondAttribute="leading" id="zIo-me-C7X"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bearingField" destination="YxI-Cg-FSw" id="kk9-Tg-s3V"/>
+                        <outlet property="calcButton" destination="z2G-JQ-JLF" id="I2a-0I-XdO"/>
+                        <outlet property="clearButton" destination="5QW-re-b0l" id="Ulo-LK-Z11"/>
+                        <outlet property="distanceField" destination="pYe-Dh-gRf" id="Foq-v6-ya2"/>
+                        <outlet property="latp1" destination="NGA-DQ-pAt" id="f3G-TD-OOE"/>
+                        <outlet property="latp2" destination="SFs-X9-tJs" id="XAh-Uv-yH2"/>
+                        <outlet property="longp1" destination="ugk-i7-12T" id="fRt-OJ-QSM"/>
+                        <outlet property="longp2" destination="D6q-kG-YLw" id="vkm-9P-yZb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1864.8" y="141.67916041979012"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="Ogs-Nd-4DH">
+            <objects>
+                <viewController id="A4D-wX-swq" customClass="SettingsViewController" customModule="HW7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G1U-b4-MMI"/>
+                        <viewControllerLayoutGuide type="bottom" id="01q-bb-OmW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NsS-6M-i97">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2Xo-Ii-ZRH">
+                                <rect key="frame" x="16" y="72" width="342" height="66.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJn-pf-gMK">
+                                        <rect key="frame" x="0.0" y="0.0" width="342" height="33"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance Units:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7r-DE-FuH">
+                                                <rect key="frame" x="0.0" y="0.0" width="171" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilometers" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCj-ga-Bmj">
+                                                <rect key="frame" x="171" y="0.0" width="171" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="A7r-DE-FuH" firstAttribute="width" secondItem="rCj-ga-Bmj" secondAttribute="width" id="AWc-hc-Nh2"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKi-OY-NuT">
+                                        <rect key="frame" x="0.0" y="33" width="342" height="33.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bearing Unit:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8w-l5-HH8">
+                                                <rect key="frame" x="0.0" y="0.0" width="171" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Degrees" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDn-c1-PvQ">
+                                                <rect key="frame" x="171" y="0.0" width="171" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="v8w-l5-HH8" firstAttribute="width" secondItem="YDn-c1-PvQ" secondAttribute="width" id="aUL-h8-MhS"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dJn-pf-gMK" firstAttribute="top" secondItem="2Xo-Ii-ZRH" secondAttribute="top" id="5cT-ii-uBZ"/>
+                                    <constraint firstItem="dJn-pf-gMK" firstAttribute="leading" secondItem="2Xo-Ii-ZRH" secondAttribute="leading" id="B7w-3L-bmw"/>
+                                    <constraint firstAttribute="trailing" secondItem="dJn-pf-gMK" secondAttribute="trailing" id="Io7-cb-7ag"/>
+                                    <constraint firstAttribute="trailing" secondItem="wKi-OY-NuT" secondAttribute="trailing" id="LeJ-28-W6Q"/>
+                                    <constraint firstItem="wKi-OY-NuT" firstAttribute="leading" secondItem="2Xo-Ii-ZRH" secondAttribute="leading" id="peh-mI-bPs"/>
+                                    <constraint firstItem="wKi-OY-NuT" firstAttribute="height" secondItem="dJn-pf-gMK" secondAttribute="height" id="yVG-nu-Ccc"/>
+                                </constraints>
+                            </stackView>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m3W-QB-wpt">
+                                <rect key="frame" x="16" y="493" width="343" height="166"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m3W-QB-wpt" firstAttribute="leading" secondItem="NsS-6M-i97" secondAttribute="leadingMargin" id="56C-hY-6NC"/>
+                            <constraint firstItem="2Xo-Ii-ZRH" firstAttribute="leading" secondItem="NsS-6M-i97" secondAttribute="leadingMargin" id="GgN-fz-bHj"/>
+                            <constraint firstItem="2Xo-Ii-ZRH" firstAttribute="height" secondItem="NsS-6M-i97" secondAttribute="height" multiplier="1:10" id="Hfy-4B-5Yc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Xo-Ii-ZRH" secondAttribute="trailing" constant="1" id="NnU-Zy-AIe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m3W-QB-wpt" secondAttribute="trailing" id="V0J-2H-s4d"/>
+                            <constraint firstItem="2Xo-Ii-ZRH" firstAttribute="top" secondItem="G1U-b4-MMI" secondAttribute="bottom" constant="8" symbolic="YES" id="aYT-Va-FkI"/>
+                            <constraint firstItem="01q-bb-OmW" firstAttribute="top" secondItem="m3W-QB-wpt" secondAttribute="bottom" constant="8" symbolic="YES" id="wcd-Ed-EAK"/>
+                            <constraint firstItem="m3W-QB-wpt" firstAttribute="height" secondItem="NsS-6M-i97" secondAttribute="height" multiplier="1:4" id="yEn-rJ-YvV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9U9-K2-eAK">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Z5A-E4-95Z">
+                            <connections>
+                                <action selector="cancelPressed:" destination="A4D-wX-swq" id="SYz-in-qHE"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="CcQ-ij-ndO">
+                            <connections>
+                                <action selector="savePressed:" destination="A4D-wX-swq" id="Pz4-3v-J9j"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bearingLabel" destination="YDn-c1-PvQ" id="KBS-CR-d6z"/>
+                        <outlet property="distanceLabel" destination="rCj-ga-Bmj" id="bZI-de-6hz"/>
+                        <outlet property="picker" destination="m3W-QB-wpt" id="s1P-FN-Ids"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mx1-eG-Qym" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1144.8" y="141.67916041979012"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="D4x-Ln-e4k">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gof-h4-xeg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NhC-EF-b5L">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="A4D-wX-swq" kind="relationship" relationship="rootViewController" id="4U2-MP-GIL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Weh-i5-S2H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="377" y="142"/>
+        </scene>
+    </scenes>
+</document>
